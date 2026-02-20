@@ -212,3 +212,5 @@ __marimo__/
 #Directory specific
 testing_main.py
 batch_smi.txt
+
+*.zip
