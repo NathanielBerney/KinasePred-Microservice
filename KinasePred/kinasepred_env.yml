@@ -1,0 +1,22 @@
+name: kinasepred_pred
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10  # Upgraded
+  - pip
+  - numpy>=1.23  # Upgraded to match TF 2.13 requirements
+  - pandas
+  - rdkit
+  - tensorflow=2.13.1
+  - h5py
+  - joblib
+  - requests
+  - pip:
+      - absl-py==2.1.0
+      - keras==2.13.1
+      - keras-preprocessing==1.1.2
+      - protobuf==3.20.3
+      - tensorboard==2.13.0
+      # REMOVE tensorflow-gpu==2.4.1 (See "Crucial Warning" below)
+      - tensorflow-io-gcs-filesystem==0.34.0
